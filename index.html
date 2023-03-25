@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=PT+Serif:ital@1&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <title>Temperature Converter</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="content">
+            <div class="box1">
+                <h3>Temperature Converter</h3>
+            </div>
+    
+            <div class="box2">
+                <div>
+                    <label for="">Degree</label>
+                    <input type="number" class="take_val" required>
+                </div>
+                <div>
+                    <label for="">Type</label>
+                    <select id="unit">
+                        <option value="Fahrenheit">Fahrenheit</option>
+                        <option value="Celsius">Celsius</option>
+                    </select>
+                </div>
+                <div class="value_container">
+                    <label>Result</label>
+                    <div class="value"></div>
+                </div>
+            </div>
+            <button onclick="temprature()" class="btn">Convert</button>
+        </div>
+    </div>
+</body>
+<script src="./JS/index.js"></script>
+</html>
